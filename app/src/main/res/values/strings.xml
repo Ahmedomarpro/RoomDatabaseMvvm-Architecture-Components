@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RoomDataBase(MVVM)</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>
