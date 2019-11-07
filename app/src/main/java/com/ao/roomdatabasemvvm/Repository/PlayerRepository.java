@@ -35,7 +35,7 @@ public class PlayerRepository {
 		new UpdatePlayerAsyncTask(playerDao).execute(player);
 	}
 	public void delete(Player player){
-		new DeleteAllPlayersAsyncTask(playerDao).execute(player);
+		new DeletePlayerAsyncTask(playerDao).execute(player);
 	}
 	public void deleteAllPlayers(){
 		new DeleteAllPlayersAsyncTask(playerDao).execute();
@@ -78,10 +78,10 @@ public class PlayerRepository {
 	}
 
 	//AsyncTask for delete existing player
-	private static class DeletPlayerAsyncTask extends AsyncTask<Player,Void,Void>{
+	private static class DeletePlayerAsyncTask extends AsyncTask<Player,Void,Void>{
 		private PlayerDao playerDao;
 
-		public DeletPlayerAsyncTask(PlayerDao playerDao) {
+		public DeletePlayerAsyncTask(PlayerDao playerDao) {
 			this.playerDao = playerDao;
 		}
 

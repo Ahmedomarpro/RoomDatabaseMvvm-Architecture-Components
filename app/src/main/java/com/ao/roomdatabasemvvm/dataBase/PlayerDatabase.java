@@ -12,7 +12,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.ao.roomdatabasemvvm.dataBase.Dao.PlayerDao;
 import com.ao.roomdatabasemvvm.model.Player;
 
-@Database( entities = {Player.class},version = 1)
+@Database( entities = {Player.class},version = 2)
 public abstract class PlayerDatabase extends RoomDatabase{
 
 	public static PlayerDatabase instance;

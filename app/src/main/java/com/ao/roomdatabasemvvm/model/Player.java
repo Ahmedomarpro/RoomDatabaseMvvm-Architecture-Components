@@ -3,7 +3,7 @@ package com.ao.roomdatabasemvvm.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity (tableName = "players_table")
+@Entity (tableName = "player_database")
 public class Player {
 	@PrimaryKey(autoGenerate = true)
 	private int id;

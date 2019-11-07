@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements CreatePlayerDialo
                 ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-                return false;
+                return true;
             }
 
             @Override
@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity implements CreatePlayerDialo
         }
 
     }
+
+
     private void intView() {
 
         parent = findViewById(android.R.id.content);
@@ -113,6 +115,8 @@ public class MainActivity extends AppCompatActivity implements CreatePlayerDialo
             }
         });
     }
+
+
 
 
     private void openCreatePlayerDialog() {

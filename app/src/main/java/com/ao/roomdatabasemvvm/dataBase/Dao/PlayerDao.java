@@ -23,10 +23,10 @@ public interface PlayerDao {
 	@Delete
 	void delete (Player player);
 
-	@Query("DELETE FROM players_table")
+	@Query(("DELETE FROM player_database"))
 	void deletAllPlayer ();
 
 	//Get all the list of player from table by descending order
-	@Query("SELECT * FROM PLAYERS_TABLE")
+	@Query("SELECT * FROM player_database")
 	LiveData <List<Player>> getAllPlayers();
 }
